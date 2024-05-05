@@ -8,7 +8,7 @@ const networkCtx = networkCanvas.getContext("2d");
 
 const carretera = new Carretera(carroCanvas.width / 2, carroCanvas.width * 0.9);
 
-const N = 1;
+const N = 100;
 const carros = generarCarros(N)
 let mejorCarro = carros[0];
 
