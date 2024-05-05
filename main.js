@@ -26,16 +26,16 @@ if (localStorage.getItem("mejorCerebro")) {
 }
 
 const trafico = [
-    new Carro(carretera.lineaCentral(3), -200, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(1), -400, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(2), -200, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(0), -400, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(5), -300, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(3), -900, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(4), -800, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(1), -1000, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(5), -400, 30, 50, "Jordy", 5),
-    new Carro(carretera.lineaCentral(5), -1100, 30, 50, "Jordy", 5)
+    new Carro(carretera.lineaCentral(3), -200, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(1), -400, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(2), -200, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(0), -400, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(5), -300, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(3), -900, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(4), -800, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(1), -1000, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(5), -400, 30, 50, "Jordy", 2),
+    new Carro(carretera.lineaCentral(5), -1100, 30, 50, "Jordy", 2)
 ]
 function procesar() {
     animar();
