@@ -39,7 +39,7 @@ const trafico = [
 ]
 function procesar() {
     animar();
-}
+
 
 
 function save() {
@@ -102,3 +102,5 @@ function animar(time) {
     //da la ilucion de moverse
     requestAnimationFrame(animar);
 }
+}
+    
