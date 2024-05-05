@@ -6,23 +6,35 @@ body {
     justify-content: center;
     align-items: center;
 }
-#botonesVerticales{
+
+#botonesVerticales {
     display: flex;
     flex-direction: column;
 }
-button{
+
+button {
     border: none;
     border-radius: 5px;
     padding: 5px 5px 7px 5px;
     margin: 2px;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background: greenyellow;
 }
-#carroCanvas{
+
+#carroCanvas {
     background: lightgreen;
 }
-#networkCanvas{
+
+#networkCanvas {
     background: black;
+}
+
+#inputs {
+    width: 30%;
+    height: 50px;
+    /* centrado vertical */
+    top: 50%;
 }
