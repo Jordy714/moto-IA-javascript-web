@@ -40,7 +40,7 @@ const trafico = [
 function procesar() {
     animar();
 
-
+}
 
 function save() {
     localStorage.setItem("mejorCerebro",
@@ -102,5 +102,5 @@ function animar(time) {
     //da la ilucion de moverse
     requestAnimationFrame(animar);
 }
-}
+
     
