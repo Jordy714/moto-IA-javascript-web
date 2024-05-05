@@ -3,7 +3,6 @@ carroCanvas.width = 400;
 const networkCanvas = document.getElementById("networkCanvas");
 networkCanvas.width = 400;
 
-const numeroDeMotos = document.getElementById("nMotos").value;
 
 const carroCtx = carroCanvas.getContext("2d");
 const networkCtx = networkCanvas.getContext("2d");
