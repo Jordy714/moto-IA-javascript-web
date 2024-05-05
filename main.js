@@ -3,12 +3,14 @@ carroCanvas.width = 400;
 const networkCanvas = document.getElementById("networkCanvas");
 networkCanvas.width = 400;
 
+const numeroDeMotos = document.getElementById("nMotos").value;
+
 const carroCtx = carroCanvas.getContext("2d");
 const networkCtx = networkCanvas.getContext("2d");
 
 const carretera = new Carretera(carroCanvas.width / 2, carroCanvas.width * 0.9);
 
-const N = 100;
+const N = numeroDeMotos;
 const carros = generarCarros(N)
 let mejorCarro = carros[0];
 
@@ -16,7 +18,7 @@ if (localStorage.getItem("mejorCerebro")) {
     for (let i = 0; i < carros.length; i++) {
         carros[i].cerebro = JSON.parse(
             localStorage.getItem("mejorCerebro"));
-        if (i!=0) {
+        if (i != 0) {
             RedNeuronal.mutate(carros[i].cerebro, 0.1)
         }
     }
@@ -35,8 +37,10 @@ const trafico = [
     new Carro(carretera.lineaCentral(5), -400, 30, 50, "Jordy", 5),
     new Carro(carretera.lineaCentral(5), -1100, 30, 50, "Jordy", 5)
 ]
+function procesar() {
+    animar();
+}
 
-animar();
 
 function save() {
     localStorage.setItem("mejorCerebro",
