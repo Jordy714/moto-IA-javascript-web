@@ -1,4 +1,4 @@
-class Carro {
+class Moto {
     constructor(x, y, width, height, control, maxVelocidad = 3) {
         this.x = x;
         this.y = y;
