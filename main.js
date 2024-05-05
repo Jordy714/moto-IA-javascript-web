@@ -10,7 +10,7 @@ const networkCtx = networkCanvas.getContext("2d");
 
 const carretera = new Carretera(carroCanvas.width / 2, carroCanvas.width * 0.9);
 
-const N = numeroDeMotos;
+const N = 100;
 const carros = generarCarros(N)
 let mejorCarro = carros[0];
 
@@ -37,10 +37,10 @@ const trafico = [
     new Carro(carretera.lineaCentral(5), -400, 30, 50, "Jordy", 2),
     new Carro(carretera.lineaCentral(5), -1100, 30, 50, "Jordy", 2)
 ]
-function procesar() {
-    animar();
 
-}
+animar();
+
+
 
 function save() {
     localStorage.setItem("mejorCerebro",
